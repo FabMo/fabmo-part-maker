@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- <link rel="icon" type="image/x-icon" href="img/favicon.ico" /> -->
+    <!-- <link rel="icon" type="image/png" href="img/favicon.png" /> -->
+
+    
+    
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="./dist/css/main.css">
+  </head>
+
+<!--[if lt IE 7]>
+  <body class="lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+  <body class="lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+  <body class="lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  <body>
+<!--<![endif]-->
+    <!--[if lt IE 9]>
+      <div class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+    <![endif]-->
+
+    <div class="main">
+
+      <div class="section">
+        <div class="container-fluid">
+          <div class='row top'>
+            <div class="clearfix col-sm-1 hidden-xs"></div>
+            <div class="col-xs-9 col-sm-10">
+              <select class="form-control form-control-lg  groups">
+                <option  id="add">+</option>
+              </select>
+            </div>
+            <div class="col-xs-2 col-sm-1">
+              <i class="icon-cog settings"></i>
+            </div>
+          </div>   
+        </div>
+      </div>
+           
+          <div class="container-fluid ">
+            <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10 ">
+            <ul class="list-group list-group-flush  part-list">
+              <li class="list-group-item part" id="addPart" id="">+</li>
+            </ul>
+            </div>
+            <div class="col-xs-1"></div>
+
+            </div>
+          </div>
+
+        </div>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header top">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h5 class="modal-title" >Group Settings</h5>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <span class="input-group-addon" >Group name</span>
+          <input type="text" id="groupName" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">Group Theme</span>
+          <div class="themeColor"></div>
+        </div>
+        <br>
+        <p class="modal-title" >Part List</p>
+        <div class="container-fluid edit-list-container">
+          <ul class="list-group list-group-flush col-12 edit-list">
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" id="delete" class="btn btn-danger">Delete Group</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="jobsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-header top">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h5 class="modal-title" >Group Settings</h5>
+
+      </div>
+      <div class="modal-body">
+        <p class="modal-title" >Part List</p>
+        <div class="container-fluid edit-list-container">
+          <ul class="list-group list-group-flush col-12 new-part-list">
+          </ul>
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center jobHistory">
+          </ul>
+        </nav>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="colors">
+  <div class="pointer">
+  </div>
+</div>
+    </div> <!-- .main -->
+
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>

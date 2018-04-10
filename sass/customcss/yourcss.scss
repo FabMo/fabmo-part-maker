@@ -1,0 +1,98 @@
+///Define your colors
+$color-primary: #03a9f4;
+$color-light: #67daff;
+$color-dark: #007ac1;
+$color-neutral: #F5F5F6;
+$brand-primary: #03a9f4;
+
+///example scss
+h1 {
+  transition: height 250ms; // behold auto-prefixing
+  display: flex; 
+}
+
+
+
+.settings{
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.groups{
+  background-color: $color-dark;
+  border-color: $color-dark;
+
+  transition: all 0.5s;
+}
+
+select option{
+  background-color: $color-primary;
+  color: $color-dark;
+  
+}
+
+body{
+  background-color: $color-neutral;
+}
+
+li {
+  background-color:$color-neutral;
+}
+
+.part {
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+}
+
+.parts{
+  border-bottom: 2px solid;
+}
+
+.top{
+
+  transition: all 0.5s;
+}
+
+
+.themeColor {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-sizing: inherit;
+    width: 3rem;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;
+
+}
+
+.edit-list-container{
+  margin-top: 1em;
+  max-height: 150px;
+  overflow: scroll;
+}
+
+.delete{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.colors{
+  display:none;
+  padding-top: 0.5em;
+  position: absolute;
+  max-height: 10.5em;
+  max-width: 10.5em;
+  z-index: 9999;
+  overflow: scroll;
+  background-color: #FFFFFF;
+}
+
+.colorBlock{
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+  margin-left: 0.5em;
+  cursor: pointer;
+}

@@ -1,7 +1,7 @@
 {
   "name": "fabmo-part-maker",
   "version": "1.0.0",
-  "description": "A simple app for production enviorments for easy replication of parts",
+  "description": "A simple app for easy replication of parts",
   "repository": "",
   "main": "index.html",
   "icon": "icon.png",

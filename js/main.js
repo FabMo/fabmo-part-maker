@@ -71,10 +71,21 @@ $('.settings').click(function(){
 });
 
 $('.edit-list').on('click', '.delete', function(){
-    var el = $(this).parent();
-    el.remove();
-    var id =el.attr('id').split("-")[0];
-    $('#'+id).remove();
+  var group = $('.groups option:selected').attr('id');
+  var el = $(this).parent();
+  el.remove();
+  var id =el.attr('id').split("-")[0];
+  $('#'+id).remove();
+  var index = appconfig.groups[group].jobs.findIndex(function(job){
+    return job.id == id;
+  })
+  console.log(index);
+  console.log(appconfig.groups[group].jobs);
+  appconfig.groups[group].jobs.splice(index, 1);
+  console.log(appconfig.groups[group].jobs);
+  setConfig(appconfig);
+
+
 });
 
 $('.themeColor').click(function(e){
@@ -135,7 +146,9 @@ $('#groupName').change(function(){
 });
 
 $('#delete').click(function(){
+  delete appconfig.groups[$('.groups option:selected').attr('id')];
   $('.groups option:selected').remove();
+  $('.groups').change();
 });
 
 $('#addPart').click(function(){
